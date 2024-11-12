@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Section with Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="profile-card">
+      <img src="profil.png" alt="" />
+      <div class="profile-info">
+        <h2 id="profileName">Nama Anda</h2>
+        <p id="profileRole">Front End Designer</p>
+        <div class="buttons">
+          <button class="edit" onclick="showForm()">Edit</button>
+          <button class="resume">Resume</button>
+        </div>
+        <div class="profile-details">
+          <p><strong>Availability:</strong> <span id="profileAvailability">Full Time</span></p>
+          <p><strong>Usia:</strong> <span id="profileAge">19</span></p>
+          <p><strong>Lokasi:</strong> <span id="profileLocation">Jakarta</span></p>
+          <p><strong>Pengalaman:</strong> <span id="profileYoe">2</span></p>
+          <p><strong>Email:</strong> <span id="profileEmail">email@gmail.com</span></p>
+        </div>
+      </div>
+
+      <div class="form-section" id="editForm">
+        <h3>Edit Profile</h3>
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+
+        <label>Role</label>
+        <input type="text" id="role" placeholder="Enter your role" />
+
+        <label>Availability</label>
+        <select id="availability">
+          <option value="Full Time">Full Time</option>
+          <option value="Part Time">Part Time</option>
+          <option value="Freelance">Freelance</option>
+        </select>
+
+        <label>Age</label>
+        <input type="number" id="age" placeholder="Enter your age" />
+
+        <label>Location</label>
+        <input type="text" id="location" placeholder="Enter your location" />
+
+        <label>Years of Experience (YoE)</label>
+        <input type="number" id="yoe" placeholder="Enter your experience in years" />
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+
+        <button onclick="saveProfile()">Save</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

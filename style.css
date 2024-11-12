@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.profile-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.profile-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.profile-info h2 {
+  margin: 0;
+  font-size: 24px;
+}
+.profile-info p {
+  margin: 5px 0;
+  color: gray;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.buttons .edit {
+  background-color: #007bff;
+  color: white;
+}
+.buttons .resume {
+  background-color: #28a745;
+  color: white;
+}
+.profile-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+.profile-details p {
+  margin: 0;
+}
+.form-section {
+  display: none;
+  grid-column: span 2;
+}
+.form-section label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.form-section input,
+.form-section select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.form-section button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
